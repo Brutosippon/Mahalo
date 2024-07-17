@@ -1,7 +1,7 @@
 // Efeito de escrita
 document.addEventListener('DOMContentLoaded', function() {
     let i = 0;
-    const txt = 'Mahalo restaurant & bar';
+    const txt = 'Mahalo restaurant&bar';
     const speed = 100;
     
     function typeWriter() {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelector('#restaurant-name').innerHTML = '';
                 i = 0;
                 typeWriter();
-            }, 9000); // Pausa antes de reiniciar
+            }, 5000); // Pausa antes de reiniciar
         }
     }
     
