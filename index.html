@@ -19,9 +19,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home" hx-scroll="true">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#events" hx-scroll="true">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="#menu" hx-scroll="true">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home" hx-scroll="true">Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu" hx-scroll="true">🍴Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#events" hx-scroll="true">Photos</a></li>
             </ul>
         </div>
     </nav>
@@ -29,14 +29,56 @@
     <section id="home" class="container-fluid text-center">
         <div class="row">
             <div class="col">
-                <h1 class="display-4" id="restaurant-name" hx-get="/typewriter" hx-trigger="load"></h1>
-                <p>Lunch: 12h-15h | Dinner: 19h-22h | Close on Monday</p>
-                <p>Email: Mahalorestaurantandbar@gmail.com</p>
-                <p>Telefone: (+351) 968 284 956</p>
-                <a target="_blank" href="https://maps.app.goo.gl/g992N2HiwtmebhhP8">Maps</a> | <a target="_blank" href="https://www.tripadvisor.pt/UserReviewEdit-g189116-d26260008-Mahalo_Restaurant_and_Bar-Faro_Faro_District_Algarve.html">TripAdvisor</a> | <a target="_blank" href="https://www.instagram.com/mahalorestaurantandbar/">Instagram</a>
+                <h1 class="display-4" id="restaurant-name" hx-trigger="load"></h1>
+                <p>🍴Lunch: 12h-15h | Dinner: 19h-22h | Close on Monday</p>
+                <p><a target="_blank" href="https://maps.app.goo.gl/g992N2HiwtmebhhP8"><img src="assets/icon/geo-alt.svg" alt="maps"> Location</a> | <a target="_blank" href="https://www.instagram.com/mahalorestaurantandbar/" ><img src="assets/icon/instagram.svg" alt="instagram"> Instagram</a> | <a target="_blank" href="https://www.tripadvisor.pt/UserReviewEdit-g189116-d26260008-Mahalo_Restaurant_and_Bar-Faro_Faro_District_Algarve.html"><img src="assets/icon/chat-right-quote.svg" alt="tripadvisor"> TripAdvisor</a></p>
+                
+                <p class="text-b" ><img src="assets/icon/telephone.svg" alt="call"> Call: (+351) <b>968284956</b></p>
+                <p>@ Email: Mahalorestaurantandbar@gmail.com</p>
             </div>
-
         </div>
+    </section>
+
+    <section id="menu" class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <h2>Menu</h2>
+                <div class="card-deck">
+                    <div class="card" style="cursor: pointer;">
+                        <a href="assets/images/menufood.pdf" target="_blank">
+                            <img src="assets/images/menu1.jpg" class="d-block w-100" alt="Menu 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Menu de Comida | Food</h5>
+                                <p class="card-text">Clique para ver o menu de comida.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card" style="cursor: pointer;">
+                        <a href="assets/images/menudrinks.pdf" target="_blank">
+                            <img src="assets/images/menu2.jpg" class="d-block w-100" alt="Menu 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Menu de Bebidas | Drinks</h5>
+                                <p class="card-text">Clique para ver o menu de bebidas.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section>
+        <p></p>
+    </section>
+    <section>
+        <p></p>
+    </section>
+    <section>
+        <p></p>
+    </section>
+    <section>
+        <p></p>
     </section>
     
     <section id="events" class="container-fluid text-center">
@@ -66,46 +108,22 @@
             </div>
         </div>
     </section>
-    <p></p>
-    <section id="menu" class="container-fluid text-center">
-        <div class="row">
-            <div class="col">
-                <h2>Menu</h2>
-                <div class="card-deck">
-                    <div class="card">
-                        <img src="assets/images/menu1.jpg" class="d-block w-100" alt="Menu 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Entradas | Starters</h5>
-                            <p class="card-text">Descrição do prato 1.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/menu2.jpg" class="d-block w-100" alt="Menu 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Carne&Peixe | Fish&Meat</h5>
-                            <p class="card-text">Descrição do prato 2.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/images/menu3.jpg" class="d-block w-100" alt="Menu 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Sobremesas | Deserts</h5>
-                            <p class="card-text">Descrição do prato 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section></section>
+    
     
     <footer class="container-fluid text-center">
             
-        <p><a target="_blank" href="https://maps.app.goo.gl/g992N2HiwtmebhhP8">Maps</a> | <a target="_blank" href="https://www.tripadvisor.pt/UserReviewEdit-g189116-d26260008-Mahalo_Restaurant_and_Bar-Faro_Faro_District_Algarve.html">TripAdvisor</a> | <a target="_blank" href="https://www.instagram.com/mahalorestaurantandbar/">Instagram</a></p>
-        <p>Telefone: (+351) 968 284 956</p>
-        <p>Lunch: 12h-15h | Dinner: 19h-22h | Close on Monday</p>
-        <p>Email: Mahalorestaurantandbar@gmail.com</p>
-        <p>© 2021 Mahalo</p>   
+        <div class="row">
+            <div class="col">
+                <h1 class="display-4" id="restaurant-name" hx-trigger="load"></h1>
+                <p>🍴Lunch: 12h-15h | Dinner: 19h-22h | Close on Monday</p>
+                <p><a target="_blank" href="https://maps.app.goo.gl/g992N2HiwtmebhhP8"><img src="assets/icon/geo-alt.svg" alt="maps"> Location</a> | <a target="_blank" href="https://www.instagram.com/mahalorestaurantandbar/" ><img src="assets/icon/instagram.svg" alt="instagram"> Instagram</a> | <a target="_blank" href="https://www.tripadvisor.pt/UserReviewEdit-g189116-d26260008-Mahalo_Restaurant_and_Bar-Faro_Faro_District_Algarve.html"><img src="assets/icon/chat-right-quote.svg" alt="tripadvisor"> TripAdvisor</a></p>
+                
+                <p class="text-b" ><img src="assets/icon/telephone.svg" alt="call"> Call: (+351) <b>968284956</b></p>
+                <p>@ Email: Mahalorestaurantandbar@gmail.com</p>
+                <p><i>Copywriting© 2021 Mahalo</i></p>   
+            </div>
+        </div>
+        
 
     </footer>
 

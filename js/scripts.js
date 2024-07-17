@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.querySelector('#restaurant-name').innerHTML = '';
                 i = 0;
                 typeWriter();
-            }, 1600); // Pausa antes de reiniciar
+            }, 9000); // Pausa antes de reiniciar
         }
     }
     
@@ -28,5 +28,15 @@ document.querySelectorAll('a.nav-link').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+    });
+});
+
+// Carregar PDF ao clicar no card do menu
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', function() {
+        let pdfUrl = this.getAttribute('hx-get');
+        if (pdfUrl) {
+            window.open(pdfUrl, '_blank');
+        }
     });
 });
