@@ -40,3 +40,29 @@ document.querySelectorAll('.card').forEach(card => {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const images = [
+        'assets/images/homephoto.jpg',
+        'assets/images/homephoto2.jpg',
+        'assets/images/homephoto3.jpg'
+    ];
+    const backgroundImage = document.querySelector('.background-image');
+    let currentIndex = 0;
+
+    function changeBackgroundImage() {
+        backgroundImage.style.backgroundImage = `url(${images[currentIndex]})`;
+        backgroundImage.style.opacity = 0;
+        setTimeout(() => {
+            backgroundImage.style.opacity = 1;
+        }, 100);
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // Troca de imagem a cada 5 segundos
+    setInterval(changeBackgroundImage, 5000);
+
+    // Defina a imagem inicial
+    changeBackgroundImage();
+});
