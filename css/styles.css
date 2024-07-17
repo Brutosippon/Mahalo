@@ -1,0 +1,29 @@
+/* styles.css */
+body {
+    position: relative;
+    padding-top: 56px; /* Altura da navbar */
+}
+
+section {
+    padding: 60px 0;
+}
+
+#home {
+    height: calc(100vh - 56px); /* Altura da navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#events, #menu {
+    height: calc(100vh - 56px); /* Altura da navbar */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.card-deck .card {
+    margin-bottom: 30px;
+}
